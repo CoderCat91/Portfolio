@@ -97,15 +97,6 @@ body, html{
 .navbar .hamburger:hover{
     color: #5bd485;
 }
-.main_container {
-	height: 100%;
-}
-.main_container .content{
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-}
-
 
 .hero-image {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1513569771920-c9e1d31714af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
@@ -137,16 +128,25 @@ h1 {
 	font-family: 'Libre Baskerville', serif;
   }
 
-  .social{
-	  align-content: center;
-  }
-  .social ul li{
-	display: inline-block;
-	justify-content: space-between;
-	align-items: center;
-  }
+  .social {
+	text-align: center;
+}
 
-  .social ul li a i{
-	  color:white;
-	  size: 24px;
-  }
+.social ul {
+	display: inline-block;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social i {
+	color: white;
+	text-align: center;
+	display: inline-block;
+	margin-left: 10px;
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 24px;
+	padding-top: 20px;
+}
