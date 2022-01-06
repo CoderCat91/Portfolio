@@ -122,22 +122,31 @@ body, html{
 	padding:10px;
 	margin:10%;
 }
+.anim1 {
+
+}
 h1 {
     text-align: center;
     color: white;
     font-family: 'Nanum Myeongjo', serif;
-	position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   h3 {
     text-align: center;
     color: white;
 	font-family: 'Libre Baskerville', serif;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  }
+
+  .social{
+	  align-content: center;
+  }
+  .social ul li{
+	display: inline-block;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  .social ul li a i{
+	  color:white;
+	  size: 24px;
   }
