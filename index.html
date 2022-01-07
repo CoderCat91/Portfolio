@@ -46,25 +46,25 @@
               <section>
                 <div class="bg"></div>
                 <div class="hero-image-two">
-                <h1>Hey look, a title</h1>
+                <h1>Portfolio</h1>
             </div>
               </section>
               <section>
                 <div class="bg"></div>
                 <div class="hero-image-three">
-                <h1>They just keep coming</h1>
+                <h1>Education</h1>
                 </div>
               </section>
               <section>
                 <div class="bg"></div>
                 <div class="hero-image-four">
-                <h1>So smooth though</h1>
+                <h1>Life</h1>
                 </div>
               </section>
               <section>
                 <div class="bg"></div>
                 <div class="hero-image-five">
-                <h1>Nice, right?</h1>
+                <h1>Media</h1>
                 </div>
               </section>
               
@@ -79,9 +79,6 @@
           gsap.utils.toArray("section").forEach((section, i) => {
   section.bg = section.querySelector(".bg"); 
 
-  // Give the backgrounds some random images
-
-  // Do the parallax effect on each section
   if (i) {
     section.bg.style.backgroundPosition = `50% ${-innerHeight / 2}px`;
 
@@ -94,8 +91,6 @@
       }
     });
   } 
-  
-  // the first image should be positioned against the top. Use px on the animating part to work with GSAP. 
   else {
     section.bg.style.backgroundPosition = "50% 0px"; 
 
