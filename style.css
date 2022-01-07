@@ -139,6 +139,7 @@ h1 {
     color: white;
 	font-family: 'Libre Baskerville', serif;
 	text-shadow: 2px 2px 8px #000;
+	padding-top: 20px;
   }
 
   h3 {
@@ -194,3 +195,21 @@ section {
 
 
 
+.container{
+	background-color: white;
+
+}
+
+.container-text h3{
+	display: inline-block;
+}
+
+.thumb-one{
+	background-image: url("https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+	overflow: hidden;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
