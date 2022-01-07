@@ -92,10 +92,11 @@ body, html{
 
 .navbar .menu ul li a:hover,
 .navbar .menu ul li a.active{
-	background: #5bd485;
+	background: #fff;
+	color: black;
 }
 .navbar .hamburger:hover{
-    color: #5bd485;
+    text-shadow: 2px 2px 8px #fff;
 }
 .hero-image, .hero-image-two, .hero-image-three, .hero-image-four, .hero-image-five{
 	overflow: hidden;
@@ -135,12 +136,14 @@ h1 {
     text-align: center;
     color: white;
 	font-family: 'Libre Baskerville', serif;
+	text-shadow: 2px 2px 8px #000;
   }
 
   h3 {
     text-align: center;
     color: white;
 	font-family: 'Libre Baskerville', serif;
+	text-shadow: 2px 2px 8px #000;
   }
 
   .social {
@@ -164,6 +167,10 @@ h1 {
 	list-style-type: none;
 	font-size: 24px;
 	padding-top: 20px;
+	text-shadow: 2px 2px 8px #000000;
+}
+.social i:hover{
+	text-shadow: 2px 2px 8px #fff;
 }
 
 section {
