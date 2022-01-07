@@ -26,6 +26,8 @@
                 </div>
             </div>
             </div>
+            <section>
+                <div class="bg"></div>
             <div class="hero-image">
                 <div class="hero-text">
                     <h1 class="anim1">Chelsey Duffin</h1>
@@ -39,11 +41,76 @@
                         </ul>
                     </div>
                 </div>
-            </div>       
+            </div>
+              </section>
+              <section>
+                <div class="bg"></div>
+                <div class="hero-image-two">
+                <h1>Hey look, a title</h1>
+            </div>
+              </section>
+              <section>
+                <div class="bg"></div>
+                <div class="hero-image-two">
+                <h1>They just keep coming</h1>
+                </div>
+              </section>
+              <section>
+                <div class="bg"></div>
+                <div class="hero-image-two">
+                <h1>So smooth though</h1>
+                </div>
+              </section>
+              <section>
+                <div class="bg"></div>
+                <div class="hero-image-two">
+                <h1>Nice, right?</h1>
+                </div>
+              </section>
+              
+              
+                  
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
         <script>
           gsap.from('.anim1', {opacity: 0, Duration: 1, y: -50, stagger:0.6});
+
+          gsap.utils.toArray("section").forEach((section, i) => {
+  section.bg = section.querySelector(".bg"); 
+
+  // Give the backgrounds some random images
+
+  // Do the parallax effect on each section
+  if (i) {
+    section.bg.style.backgroundPosition = `50% ${-innerHeight / 2}px`;
+
+    gsap.to(section.bg, {
+      backgroundPosition: `50% ${innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        scrub: true
+      }
+    });
+  } 
+  
+  // the first image should be positioned against the top. Use px on the animating part to work with GSAP. 
+  else {
+    section.bg.style.backgroundPosition = "50% 0px"; 
+
+    gsap.to(section.bg, {
+      backgroundPosition: `0% ${innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        start: "top top", 
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  }
+});
             </script>
     </body>
 </html>
