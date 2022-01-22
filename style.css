@@ -174,11 +174,13 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("
 }
 
 h1 {
+	position: relative;
     text-align: center;
     color: white;
 	font-family: 'Libre Baskerville', serif;
 	text-shadow: 2px 2px 8px #000;
 	padding-top: 20px;
+	z-index: 10;
   }
 
   h3 {
@@ -256,9 +258,25 @@ section {
 video{
 	overflow: hidden;
 	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	width: 100%;
+	top:0;
+	left:0;
+	position: absolute;
+	z-index: 5;
+	object-fit: cover;
+}
+
+.portfolio{
 	position: relative;
-	z-index: -1;
+	z-index: 10;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.project{
+	display: inline-block;
+	text-align: center;
 }
